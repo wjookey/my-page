@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя страница</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">My Page</h1>
+        <img src="images\photo_2025-02-25_21-10-46.jpg" alt="">
+    </header>
+    <main class="main container">
+        <div class="about_me">
+            <img src="images\photo_2025-02-25_21-10-46.jpg" alt="">
+            <h2>Лена Мячева</h2>
+        </div>
+
+        <div class="tabs">
+            <button class="tab" onclick="openTab(event, 'section1')">Обо мне</button>
+            <button class="tab" onclick="openTab(event, 'section2')">Фото</button>
+            <button class="tab" onclick="openTab(event, 'section3')">Моя музыка</button>
+            <button class="tab" onclick="openTab(event, 'section4')">Мемы</button>
+        </div>
+
+        <div id="section1" class="tab-content">
+            <div class="info">
+                <p>Дата рождения: 30.04.2004</p>
+                <p>Город: Нижний Новгород</p>
+                <p>Место учёбы: НИУ ВШЭ</p>
+                <a href="https://t.me/myachic" target="_blank">Мой тг <img src="images\telegram.svg" alt=""></a>
+                <h3>Рандомные факты обо мне:</h3>
+                <ul>
+                    <li>Я несостоявшаяся пианистка (бросила музыкалку, когда переезжала в другой город)</li>
+                    <li>У меня трое домашних животных: кот, кошка и собака</li>
+                    <li>Мой любимый месяц - май</li>
+                    <li>Я обожаю кофе</li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div id="section2" class="tab-content">
+            <div class="image-gallery">
+                <img src="images/image1.JPG" alt="Описание изображения 1" class="clickable-image" onclick="openModal('images/image1.JPG')">
+                <img src="images/image2.jpg" alt="Описание изображения 2" class="clickable-image" onclick="openModal('images/image2.jpg')">
+                <img src="images/image3.jpg" alt="Описание изображения 3" class="clickable-image" onclick="openModal('images/image3.jpg')">
+                <img src="images/image4.jpg" alt="Описание изображения 4" class="clickable-image" onclick="openModal('images/image4.jpg')">
+                <img src="images/image5.jpg" alt="Описание изображения 4" class="clickable-image" onclick="openModal('images/image5.jpg')">
+                <img src="images/image6.jpg" alt="Описание изображения 4" class="clickable-image" onclick="openModal('images/image6.jpg')">
+                <img src="images/image7.jpg" alt="Описание изображения 4" class="clickable-image" onclick="openModal('images/image7.jpg')">
+            </div>
+
+            
+
+        </div>
+
+        <div id="section3" class="tab-content">
+            <div class="playlist">
+                <h3>Maneskin - THE DRIVER</h3>
+                <audio controls>
+                    <source src="music\spotifydown.com - THE DRIVER.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудиоплеер.
+                </audio>
+                <h3>Maneskin - TRASTEVERE</h3>
+                <audio controls>
+                    <source src="music\spotifydown.com - TRASTEVERE.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудиоплеер.
+                </audio>
+                <h3>The Neighbourhood - Middle of Somewhere</h3>
+                <audio controls>
+                    <source src="music\The Neighbourhood - Middle of Somewhere.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудиоплеер.
+                </audio>
+                <h3>The Vaccines - Thunder Fever</h3>
+                <audio controls>
+                    <source src="music\The Vaccines - Thunder Fever.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудиоплеер.
+                </audio>
+                <h3>Kraftklub - Fan von Dir</h3>
+                <audio controls>
+                    <source src="music\Kraftklub - Fan von Dir.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудиоплеер.
+                </audio>
+            </div>
+            
+            
+        </div>
+
+        <div id="section4" class="tab-content">
+            <div class="image-gallery">
+                <img src="images/meme1.JPG" alt="Описание изображения 1" class="clickable-image" onclick="openModal('images/meme1.jpg')">
+                <img src="images/meme2.jpg" alt="Описание изображения 2" class="clickable-image" onclick="openModal('images/meme2.jpg')">
+                <img src="images/meme3.jpg" alt="Описание изображения 3" class="clickable-image" onclick="openModal('images/meme3.jpg')">
+                <img src="images/meme4.jpg" alt="Описание изображения 4" class="clickable-image" onclick="openModal('images/meme4.jpg')">
+                <img src="images/meme5.jpg" alt="Описание изображения 4" class="clickable-image" onclick="openModal('images/meme5.jpg')">
+                <img src="images/meme6.jpg" alt="Описание изображения 4" class="clickable-image" onclick="openModal('images/meme6.jpg')">
+                <img src="images/meme7.jpg" alt="Описание изображения 4" class="clickable-image" onclick="openModal('images/meme7.jpg')">
+            </div>
+
+        </div>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img" />
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Я не придумала, что тут написать, поэтому просто добра улыбок и тд и тп</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
